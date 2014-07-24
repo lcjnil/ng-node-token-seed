@@ -1,0 +1,26 @@
+{
+  "name": "angular-token",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "cli-color": "^0.3.2",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "ejs": "~0.8.5",
+    "eventproxy": "^0.3.1",
+    "express": "~4.2.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "jwt-simple": "^0.2.0",
+    "load-grunt-tasks": "^0.6.0",
+    "moment": "^2.7.0",
+    "mongoose": "^3.8.13",
+    "morgan": "~1.0.0",
+    "request": "^2.38.0",
+    "static-favicon": "~1.0.0"
+  }
+}
