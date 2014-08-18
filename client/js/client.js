@@ -40,7 +40,7 @@ myApp.controller('UserCtrl', function ($scope, $http, $window) {
         $scope.message = $scope.message + ' ' + data.message; // Should log 'foo'
       })
       .error(function (data, status, headers, config) {
-        alert(data);
+        console.log(data);
       });
   };
 
@@ -51,7 +51,7 @@ myApp.factory('authInterceptor', function ($rootScope, $q, $window) {
     request: function (config) {
       config.headers = config.headers || {};
       if ($window.localStorage.token) {
-        config.headers['x-access-token'] = $window.sessionStorage.token;
+        config.headers['x-access-token'] = $window.localStorage.token;
       }
       return config;
     },
